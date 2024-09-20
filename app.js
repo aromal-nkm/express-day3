@@ -11,9 +11,9 @@ app.set('views',__dirname+'/views');
 app.use(express.static(__dirname +'/public'))
 const nav=[
     {
-        link:'/employee',name:'Home'
+        link:'/basic',name:'Home'
     },{
-        link:'/employeeform',name:'ADD Employee'
+        link:'/basic/employeeform',name:'ADD Employee'
     }
 ]
 const basicroutes=require('./routes/basicroutes')(nav);
