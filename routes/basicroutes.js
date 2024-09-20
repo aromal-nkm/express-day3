@@ -12,6 +12,13 @@ function basicroutes(nav) {
             nav
         });
     })
+    router.get('/employeeform',(req,res)=>{
+            res.render("employeeform",{
+                nav,
+                title:"employeeform"
+
+            })
+        })
 return router
     
 }
